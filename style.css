@@ -190,3 +190,149 @@ body{background:#101219}.icon{display:inline-block;width:25px;height:25px;vertic
 .more-card-copy small{font-size:12px;color:#d3d9ec;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-right:36px}
 .more-card-play{position:absolute;right:12px;bottom:12px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#fff;color:#20263c;z-index:2}
 .more-card-play .icon{width:12px;height:12px}
+
+.challenge-page {
+  --mc-gold:#edd29d;
+  --mc-mint:#9ed8cb;
+  color:#f7f8ff;
+  background:radial-gradient(ellipse at 90% 0%,#263654 0,transparent 36%),#030815;
+  padding-bottom:42px;
+}
+.challenge-page .toolbar {margin:6px 0 18px}
+.challenge-page > .chips {display:inline-flex;background:#151a2b;border-radius:24px;padding:4px;gap:2px;margin:0}
+.challenge-page > .chips button {background:transparent;color:#acb4cb}
+.challenge-page > .chips .active {background:#334675;color:#fff}
+.challenge-page .mc-title {margin:24px 0 16px}
+.challenge-page .mc-title h2 {font-size:29px;letter-spacing:-.04em;margin-top:4px}
+.challenge-page .mc-title > small,.challenge-page .mc-destination small {color:var(--mc-gold)}
+.challenge-page .mc-seal,.challenge-overlay .mc-seal {display:block;width:74px;flex:none;transform:rotate(-8deg);color:var(--mc-gold,#8c4638);fill:none;stroke:currentColor;stroke-width:1.65;stroke-linejoin:round;stroke-linecap:round}
+.challenge-page .mc-seal text,.challenge-overlay .mc-seal text {fill:currentColor;stroke:none;text-anchor:middle;font-size:10px;font-weight:650}
+.challenge-page button:disabled {opacity:.53;cursor:default}
+.challenge-page progress {display:block;appearance:none;width:100%;height:5px;border:none;border-radius:5px;background:#262c42;margin:0 0 18px;overflow:hidden}
+.challenge-page progress::-webkit-progress-bar {background:#262c42}
+.challenge-page progress::-webkit-progress-value {background:#8eabff}
+.challenge-page progress::-moz-progress-bar {background:#8eabff}
+.challenge-page .primary {background:#6081ff;font-weight:650;min-height:46px}
+.challenge-page .mc-hint {text-align:center;color:#acb4cb;font-size:12px;margin:8px 0}
+.challenge-page .mc-history {margin-top:16px;padding:14px 16px;display:flex;align-items:center;gap:12px;width:100%;border-radius:16px;background:#151a2b}
+.challenge-page .mc-history > .icon {margin-left:auto}
+.challenge-page .mc-book-icon {position:relative;display:grid;place-items:center;width:33px;height:36px;border-radius:4px 6px 6px 4px;background:#ecd8b5;color:#574432;border-left:4px solid #a98660;box-shadow:2px 2px #b7a281}
+.challenge-page .mc-book-icon b {border-top:2px dotted #987456;padding-top:2px;font:700 15px Georgia,serif}
+.challenge-page.mc-calendar-page {min-height:100%;padding:46px 14px 26px;color:#254c50;background-color:#9fd8d9;background-image:radial-gradient(ellipse at 6px -1px,transparent 5px,#d6f1e680 5.6px,transparent 7px);background-size:43px 30px}
+.mc-calendar-page .toolbar {width:max-content;margin:0 0 18px;padding-right:15px;gap:8px;border-radius:24px;background:#fff8deed;box-shadow:0 2px 5px #345d6422}
+.mc-calendar-page .toolbar h1 {font-size:16px;font-weight:650}
+.mc-calendar-page .toolbar .circle {width:38px;height:38px;color:inherit;background:transparent;border:0}
+.mc-calendar-page .mc-album {overflow:hidden;border:1px solid #ac9974;border-radius:16px;background:#fff6db;box-shadow:0 3px #d6c39d,0 5px #af9c7b,0 8px 18px #36595625}
+.mc-calendar-page .mc-album-cover {position:relative;isolation:isolate;overflow:hidden;padding:19px 16px 14px;background:#f1e4bd;border-bottom:1px dashed #bda981}
+.mc-calendar-page .mc-cover-map {position:absolute;inset:0 0 0 auto;width:54%;height:100%;z-index:-1;mask-image:linear-gradient(90deg,transparent,#000 32%)}
+.mc-calendar-page .mc-sea-names {fill:#568c93;font:italic 14px Georgia,serif}
+.mc-calendar-page .mc-trails path {stroke:#fff0d0;stroke-width:4;stroke-dasharray:6 8;fill:none}
+.mc-calendar-page .mc-album-cover h2 {font-size:22px;color:#364c45}
+.mc-calendar-page .mc-album-cover p {margin:4px 0 0;font-size:13px;color:#526154}
+.mc-calendar-page .mc-calendar {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:0;padding:11px 9px 4px;list-style:none}
+.mc-calendar-page .mc-leaf {display:flex;align-items:center;flex-direction:column;min-height:128px;padding:7px 4px 10px;text-align:center;border:1px dashed #cbbe9d;border-radius:8px;background:#f5ecd2;color:#786e59}
+.mc-calendar-page .mc-leaf.stamped {background:#fff9e7;border:1px solid #d6c29a;color:#493e32;box-shadow:0 2px #b9a27625}
+.mc-calendar-page .mc-dayline {align-self:stretch;display:flex;justify-content:space-between;align-items:baseline;gap:2px;padding:0 1px 5px;border-bottom:1px dashed #cab897;font-size:11px}
+.mc-calendar-page .mc-dayline time {color:#6b705f;font:10px -apple-system,sans-serif;font-variant-numeric:tabular-nums}
+.mc-calendar-page .mc-leaf .mc-seal {width:58px;color:#985837;margin:5px 0 3px}
+.mc-calendar-page .mc-leaf:nth-child(3n+2) .mc-seal {color:#477b74;transform:rotate(5deg)}
+.mc-calendar-page .mc-leaf strong {font-size:12px;line-height:1.4}
+.mc-calendar-page .mc-leaf small {font-size:10px;color:#675b48;margin-top:2px}
+.mc-calendar-page .mc-leaf[aria-current] {border:1px solid #36746f;box-shadow:inset 0 0 0 1px #36746f;background:#e2efe2;color:#315e57}
+.mc-calendar-page .mc-empty {display:grid;place-items:center;width:48px;height:48px;margin:11px 0 8px;border:1px dashed #b9b597;border-radius:50%;font:26px Georgia,serif;color:#a8a68b}
+.mc-calendar-page .mc-report-note {margin:10px 0 14px;text-align:center;color:#716955;font-size:11px}
+.challenge-overlay {position:absolute;inset:0;z-index:40;display:grid;place-items:center;background:linear-gradient(150deg,#d8ece16b,#9fd8d98a);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+#phone:has(>.challenge-overlay) .mc-trip :is(.mc-pop,.mc-map-tools,.mc-trip-head,.mc-depart) {visibility:hidden}
+.challenge-overlay .mc-paper {position:relative;width:min(76%,292px);text-align:center;padding:24px 16px 22px;border:1px solid #b69a73;border-radius:10px 10px 19px 19px;background:linear-gradient(#fff9e8,#fff0cd);color:#443e33;box-shadow:0 3px #d9c399,0 5px #b79c75,0 12px 30px #375d5738}
+.challenge-overlay .mc-paper small {color:#516d60}
+.challenge-overlay .mc-paper h2 {padding:6px 0 14px;border-bottom:1px dashed #baa98d}
+.challenge-overlay .mc-stamp-field {display:grid;place-items:center;height:172px;isolation:isolate}
+.challenge-overlay .mc-stamp-field>* {grid-area:1/1}
+.challenge-overlay .mc-stamp-field .mc-seal {width:140px;color:#9a513d;opacity:0}
+.challenge-overlay .mc-stamp-field .printed {opacity:1}
+.challenge-overlay .mc-stamp-tool {display:block;width:140px;height:140px;opacity:0;z-index:1;transform-origin:center}
+.challenge-overlay .mc-paper strong {display:block}
+.challenge-overlay .mc-paper p {margin:5px 0 0;color:#62574c;font-size:12px}
+
+.challenge-page .mc-banner {
+  display:block;position:relative;width:100%;min-height:176px;overflow:hidden;margin:22px 0;padding:22px;
+  border:1px solid #c1e3cf;border-radius:20px;color:#203e42;text-align:left;
+  background:radial-gradient(ellipse at 79% 130%,#92b59a 0 34%,transparent 35%),radial-gradient(ellipse at 98% 111%,#b7d0aa 0 46%,transparent 47%),linear-gradient(110deg,#f8e8bf,#d6e9cd 57%,#a9d9d6);
+}
+.challenge-page .mc-banner-copy {position:relative;z-index:1;display:grid;justify-items:start;gap:6px}
+.challenge-page .mc-banner-copy small {color:#45695e;letter-spacing:.11em}
+.challenge-page .mc-banner-copy strong {font-size:25px;letter-spacing:-.05em}
+.challenge-page .mc-banner-copy span {font-size:12px}
+.challenge-page .mc-banner-copy b {background:#2f5958;color:white;padding:7px 13px;border-radius:20px;font-size:12px;margin-top:8px}
+.challenge-page .mc-banner-art {position:absolute;width:45%;right:-2%;bottom:12%;transform:rotate(-6deg)}
+.challenge-page .mc-banner-art:before {content:'';position:absolute;background:#fff4c4;right:24%;top:-30%;width:48px;height:48px;border-radius:50%;opacity:.8}
+.mc-building {position:relative;display:block;width:100%;height:auto}
+.challenge-page.mc-trip {position:relative;isolation:isolate;height:100%;min-height:0;padding:0;overflow:hidden;background:#9fd8d9;color:#22494c}
+#phone:has(#app>:is(.mc-trip,.mc-calendar-page)) #status {color:#234b50;background:transparent}
+.mc-trip .mc-board-frame,.mc-trip .mc-viewport {position:absolute;inset:0;background:#9fd8d9}
+.mc-trip .mc-viewport {overflow:auto;overscroll-behavior:contain;scrollbar-width:none;cursor:grab}
+.mc-trip .mc-trip-head {position:absolute;top:45px;left:14px;right:14px;display:flex;align-items:center;justify-content:space-between;gap:8px;pointer-events:none}
+.mc-trip .toolbar {pointer-events:auto;margin:0;gap:9px;border-radius:24px;background:#fff8dee8;padding-right:14px;color:#24484b;box-shadow:0 2px 5px #345d6422}
+.mc-trip .toolbar h1 {font-size:16px;font-weight:650}
+.mc-trip .toolbar .circle {width:38px;height:38px;color:inherit;background:transparent;border:0}
+.mc-trip .mc-log {pointer-events:auto;display:flex;align-items:center;gap:7px;padding:3px 9px 3px 5px;background:#fff8dee8;border-radius:10px}
+.mc-trip .mc-log small {color:#34595c}
+.mc-trip .mc-flight-head,.mc-trip .mc-flight-row {display:flex;align-items:center;justify-content:space-between;gap:8px}
+.mc-trip .mc-viewport:active {cursor:grabbing}
+.mc-trip .mc-board {height:auto;display:block;max-width:none;user-select:none}
+.mc-trip .mc-board-frame.overview .mc-viewport {display:grid;align-items:center;overflow:hidden;background:repeating-linear-gradient(0deg,#a2dbdc 0 30px,#a5dcdd 31px 32px)}
+.mc-trip .overview .mc-board {width:100%;height:auto}
+.mc-trip .mc-sea-names {font:italic 17px Georgia,serif;fill:#498e9c;opacity:.8;text-anchor:middle}
+.mc-trip .mc-trails path {stroke:#fdedd1;stroke-width:5;fill:none;stroke-linecap:round;stroke-dasharray:6 8}
+.mc-trip .mc-stop {width:58px;height:72px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;background:none;position:relative}
+.mc-trip .mc-stop .mc-building {width:56px;height:33px;flex:none}
+.mc-trip .mc-stop span {display:grid;place-items:center;width:30px;height:30px;border-radius:12px 12px 14px 14px;border:2px solid #fff4c9;background:#da845b;color:#fff7d5;box-shadow:0 3px #9d6649,0 5px 0 2px #50695844}
+.mc-trip .mc-stop span svg {width:19px;height:19px}
+.mc-trip .mc-stop.used span {background:#628b79;box-shadow:0 3px #467365,0 5px 0 2px #50695844;font-weight:800}
+.mc-trip .mc-stop.peek span {outline:3px solid #fff7da;outline-offset:3px}
+.mc-trip .mc-pop {position:relative;margin:5px auto;width:178px;height:148px;padding:7px 9px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;gap:2px;flex-direction:column;border:2px solid #aa825d;border-radius:18px;background:linear-gradient(#fffcde,#fff1cc);color:#463f3b;box-shadow:0 4px #8c7858}
+.mc-trip .mc-pop:after {content:'';position:absolute;bottom:-9px;left:50%;width:13px;height:13px;transform:translateX(-50%) rotate(45deg);background:#fff1cc;border:solid #aa825d;border-width:0 2px 2px 0}
+.mc-trip .mc-pop .mc-building {width:100px;height:53px}
+.mc-trip .mc-pop strong {font-size:14px;line-height:1.2;text-align:center}
+.mc-trip .mc-pop small {color:#82684d;font-size:10px}
+.mc-trip .mc-pop-close {position:absolute;right:2px;top:2px;padding:5px;z-index:1;color:#675946}
+.mc-trip .mc-pop-close svg {width:16px;height:16px}
+.mc-trip .mc-confirm {margin-top:3px;background:#306765;color:#fff8dd;font-size:13px;font-weight:650;min-height:34px;padding:5px 15px;border-radius:18px}
+.mc-trip .mc-map-tools {position:absolute;top:101px;left:14px}
+.mc-trip .mc-map-btn,.mc-trip .mc-world-nav {background:#fff8deee;box-shadow:0 2px 5px #345d6433;border:1px solid #b7b495;color:#34595c;border-radius:16px}
+.mc-trip .mc-map-btn {padding:5px 12px;font-size:12px;font-weight:600}
+.mc-trip .mc-world-nav {pointer-events:auto;display:flex;width:max-content;max-width:100%;margin:0 auto 9px}
+.mc-trip .mc-world-nav button {min-height:34px;padding:0 11px;font-size:12px;font-weight:600}
+.mc-trip .mc-depart {position:absolute;inset:auto 0 0;pointer-events:none;padding:32px 20px calc(5px + max(16px,env(safe-area-inset-bottom)));background:linear-gradient(to bottom,transparent,#9fd8d9dc 38%,#9fd8d9 83%);color:#22494c}
+.mc-trip .mc-flight-head {margin:5px 0 8px}
+.mc-trip .mc-flight-head strong {font-size:19px}
+.mc-trip .mc-flight-head span,.mc-trip .mc-flight-row {font-size:12px}
+.mc-trip .mc-flight-row small {color:#34595c}
+.mc-trip progress {margin:0;height:6px;background:#7ab6b6}
+.mc-trip progress::-webkit-progress-bar {background:#7ab6b6}
+.mc-trip progress::-webkit-progress-value {background:#306765}
+.mc-trip progress::-moz-progress-bar {background:#306765}
+
+.mc-trip .mc-pop-art {flex:0 1 67px;min-height:42px;width:100%;border-radius:12px 12px 6px 6px;display:grid;place-items:end center;background:radial-gradient(circle at 23% 29%,#ffecaf 0 9%,transparent 10%),radial-gradient(ellipse at 78% 108%,#a4c7a8 0 29%,transparent 30%),radial-gradient(ellipse at 17% 110%,#c3d4a8 0 36%,transparent 37%),linear-gradient(#c7e5e2,#edf0d0)}
+.mc-trip .mc-pop-art .mc-building {width:112px;height:60px;max-height:100%;filter:drop-shadow(0 1px 0 #fff2d2)}
+
+.challenge-page:has(.mc-lobby-controls) {position:relative}
+.mc-lobby-controls {position:absolute;right:20px;top:62px}
+.mc-lobby-controls .mc-map-btn {background:#243249;border-radius:18px;color:#d6e1f0;padding:6px 12px;font-size:12px}
+.mc-trip .mc-map-tools {display:flex;gap:7px}
+.mc-trip .mc-trip-head .mc-map-btn {pointer-events:auto}
+.mc-trip .mc-pop .mc-visit-note {margin:4px 0;color:#49695e}
+.mc-trip .mc-join-dock {position:absolute;inset:auto 0 0;pointer-events:none;padding:20px 14px max(14px,env(safe-area-inset-bottom));background:linear-gradient(transparent,#9fd8d9 90%)}
+.mc-trip .mc-admission {pointer-events:auto;max-height:55vh;overflow:auto;overscroll-behavior:contain;background:#fff5d8;color:#394c43;border:1px solid #ae9874;border-radius:16px;box-shadow:0 3px #b7a27e,0 5px 14px #33595a29;padding:12px 15px}
+.mc-trip .mc-admission-head,.mc-trip .mc-admission-foot {display:flex;align-items:center;justify-content:space-between;gap:12px}
+.mc-trip .mc-admission-head small {color:#72634d;font-size:11px}
+.mc-trip .mc-admission-head h2 {font-size:21px;font-weight:650;margin:2px 0}
+.mc-trip .mc-admission-head .mc-seal {color:#a75f40;width:48px;height:48px}
+.mc-trip .mc-admission p {margin:5px 0 10px;font-size:12px;line-height:1.5}
+.mc-trip .mc-admission-foot {border-top:1px dashed #bcac8d;padding-top:9px}
+.mc-trip .mc-admission-foot b {font-size:22px}
+.mc-trip .mc-admission-foot small {margin-left:6px;font-size:11px;color:#675e4a}
+.mc-trip .mc-join-button {background:#306765;color:#fff7dc;padding:10px 20px;border-radius:22px;font-size:14px;font-weight:650}
+.mc-trip .mc-terms {padding:9px 8px 9px 25px;margin:8px 0;background:#f1e6c9;border-radius:8px;font-size:12px;line-height:1.6}
+.mc-trip.inspecting .mc-admission-head,.mc-trip.inspecting .mc-admission p {display:none}
+.mc-trip.inspecting .mc-admission-foot {border:none;padding:0}
